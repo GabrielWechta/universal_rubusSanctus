@@ -1,9 +1,13 @@
-#!/bin/bash
+#!/bin/bash -x
 # Run with root privileges.
 
 # Repositories
 apt-get update
 apt-get upgrade -y
+
+# Git
+apt-get install git-all
+apt-get install git-lfs
 
 # CLI utils
 apt install tree -y
@@ -29,10 +33,11 @@ dpkg -i /tmp/google-chrome-stable_current_amd64.deb
 apt install net-tools -y
 apt install nmap -y
 snap install curl
+
 # Wireshark
 echo | add-apt-repository ppa:wireshark-dev/stable
 apt-get update
-apt-get install wireshark
+apt-get install wireshark -y
 adduser $USER wireshark
 
 # Microsoft Teams
@@ -68,7 +73,8 @@ cd
 
 # Gnome
 add-apt-repository universe
-apt install gnome-tweak-tool -y
+apt install gnome-tweaks -y
+apt install gnome-shell-extension -y
 
 # Firewall
 apt install gufw -y
