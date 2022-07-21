@@ -1,5 +1,6 @@
-#!/bin/bash -x
-# Run with root privileges.
+#!/bin/bash
+# Run with root privileges
+set -x
 
 # Repositories
 apt-get update
@@ -9,7 +10,7 @@ apt-get upgrade -y
 apt-get install git-all
 apt-get install git-lfs
 
-# CLI utils
+# CLI utils	
 apt install tree -y
 apt-get install tshark -y
 
@@ -53,7 +54,7 @@ snap install sublime-text --classic
 snap install gimp
 snap install vlc
 apt-get install nomacs -y
-
+	
 # Social
 snap install rambox
 snap install slack
@@ -74,7 +75,10 @@ cd
 # Gnome
 add-apt-repository universe
 apt install gnome-tweaks -y
-apt install gnome-shell-extension -y
+apt install gnome-shell-extensions -y
+# visit: https://extensions.gnome.org/
+# https://extensions.gnome.org/extension/779/clipboard-indicator/
+# https://extensions.gnome.org/extension/750/openweather/
 
 # Firewall
 apt install gufw -y
@@ -87,3 +91,6 @@ apt-get install ubuntu-cleaner -y
 # Repositories again
 apt-get update
 apt-get upgrade -y
+
+apt autoremove -y
+set +x
