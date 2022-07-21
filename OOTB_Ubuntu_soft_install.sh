@@ -42,6 +42,7 @@ dpkg -i /tmp/teams_1.3.00.5153_amd64.deb
 # Editors
 snap install code --classic
 snap install notepad-plus-plus
+snap install sublime-text --classic
 
 # Media
 snap install gimp
