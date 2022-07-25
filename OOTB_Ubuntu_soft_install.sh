@@ -20,6 +20,14 @@ apt install python3-pip -y
 snap install jupyter
 snap install pycharm-professional --classic
 
+# Python 3.9
+# this installation should work for every Python version
+apt update
+apt install software-properties-common -y
+add-apt-repository ppa:deadsnakes/ppa
+apt install python3.9 -y
+apt install python3.9-distutils -y
+
 # Java
 apt install default-jre -y
 

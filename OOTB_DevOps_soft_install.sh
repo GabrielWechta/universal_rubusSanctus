@@ -7,7 +7,7 @@ apt-get update
 apt-get upgrade -y
 
 # Pipenv
-apt-get install pipenv -y 
+pip install pipenv -y 
 
 # Pre-commit
 apt-get install pre-commit -y
