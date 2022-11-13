@@ -19,6 +19,7 @@ apt install python3 -y
 apt install python3-pip -y
 snap install jupyter
 snap install pycharm-professional --classic
+snap install dataspell --classic
 
 # Python 3.9
 # this installation should work for every Python version
@@ -27,6 +28,9 @@ apt install software-properties-common -y
 add-apt-repository ppa:deadsnakes/ppa
 apt install python3.9 -y
 apt install python3.9-distutils -y
+
+# Pipenv
+pip3 install pipenv -y 
 
 # Java
 apt install default-jre -y
@@ -62,11 +66,16 @@ snap install sublime-text --classic
 snap install gimp
 snap install vlc
 apt-get install nomacs -y
-	
+
+apt --fix-broken install -y
+
 # Social
 snap install rambox
 snap install slack
 snap install spotify
+
+# Screen
+apt install screen
 
 # Signal
 cd /tmp
@@ -96,9 +105,16 @@ add-apt-repository ppa:gerardpuig/ppa
 apt-get update
 apt-get install ubuntu-cleaner -y
 
+# PyWal
+apt install imagemagick
+pip3 install pywal
+export PATH="${PATH}:${HOME}/.local/bin/"
+
 # Repositories again
 apt-get update
 apt-get upgrade -y
 
 apt autoremove -y
 set +x
+
+echo "After script finishes you may want to delete repeated lines in '/etc/apt/sources.list.d/signal-xenial.list'"

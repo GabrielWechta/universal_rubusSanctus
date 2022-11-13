@@ -6,9 +6,6 @@ set -x
 apt-get update
 apt-get upgrade -y
 
-# Pipenv
-pip install pipenv -y 
-
 # Pre-commit
 apt-get install pre-commit -y
 
