@@ -20,6 +20,7 @@ apt install python3-pip -y
 snap install jupyter
 snap install pycharm-professional --classic
 snap install dataspell --classic
+apt install ipython3 -y
 
 # Python 3.9
 # this installation should work for every Python version
