@@ -39,6 +39,9 @@ apt install default-jre -y
 # Virtual Box
 apt install virtualbox -y
 
+# C-libs
+apt-get install libgmp3-dev -y
+
 # Web Browser - Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P /tmp
 dpkg -i /tmp/google-chrome-stable_current_amd64.deb
