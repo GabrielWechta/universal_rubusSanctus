@@ -56,6 +56,9 @@ echo | add-apt-repository ppa:wireshark-dev/stable
 apt-get update
 apt-get install wireshark -y
 adduser $USER wireshark
+dpkg-reconfigure wireshark-common 
+usermod -a -G wireshark $USER
+
 
 # Microsoft Teams
 wget https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.3.00.5153_amd64.deb -P /tmp
@@ -79,7 +82,10 @@ snap install slack
 snap install spotify
 
 # Screen
-apt install screen
+apt install screen -y
+
+# Htop
+snap install htop 
 
 # Signal
 cd /tmp
