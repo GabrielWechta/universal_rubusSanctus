@@ -31,7 +31,7 @@ apt install python3.9 -y
 apt install python3.9-distutils -y
 
 # Pipenv
-pip3 install pipenv -y 
+pip3 install pipenv
 
 # Java
 apt install default-jre -y
