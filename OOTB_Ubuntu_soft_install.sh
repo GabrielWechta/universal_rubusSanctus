@@ -120,6 +120,11 @@ apt install imagemagick
 pip3 install pywal
 export PATH="${PATH}:${HOME}/.local/bin/"
 
+# Rust
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | bash
+source "$HOME/.cargo/env"
+rustup update
+
 # Repositories again
 apt-get update
 apt-get upgrade -y
